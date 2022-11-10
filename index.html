@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boracay Homepage</title>
+    <link rel="icon" href="./icon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ribeye&display=swap');
+        .carousel-item {
+        transition: transform 0.6s ease-in-out;
+        }
+        .carousel-fade .active.carousel-item-start,
+        .carousel-fade .active.carousel-item-end {
+        transition: opacity 0s 0.6s;
+        }
+        #c{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: .3rem;
+            width: 65%;
+        }
+
+        .progress-container {
+        width: 100%;
+        height: 4px;
+        background: #ccc;
+        }
+        .progress-bar {
+        height: 4px;
+        background: black;
+        width: 0%;
+        }
+    </style>
+</head>
+<body style="font-family: Montserrat, sans-serif;">
+    <nav class="navbar navbar-expand-sm sticky-top shadow-lg bg-white">
+        <div class="container-fluid ps-5 pe-5">
+            <a class="navbar-brand" href="index.html" style="font-family: Ribeye, sans-serif;">bora.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./foods/foods.html">Foods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./activities/activities.html">Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" style="width:200px">
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <a class="nav-link text-black" href="../foods/foods.html">Foods</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link text-black" href="../activities/activities.html">Activities</a>
+                </li>
+            </ul>
+        </div>
+        <h1 style="font-family: Ribeye,sans-serif; text-align: center; margin-bottom: 50px;">bora.</h1>
+    </div>
+
+    <div class="progress-container sticky-top">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="container p-4">
+        <div id="demo" class="carousel carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            </div>
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="./home/images/c0.jpg" id="c">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./home/images/c1.jpg" id="c">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./home/images/c2.jpg" id="c">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./home/images/c3.jpg" id="c">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./home/images/c4.jpg" id="c">
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="container" style="text-align: center;">
+        <h2>Boracay</h2>
+        <p>Boracay is an obviously popular tourist resort. Who could resist buying a flight to this beautiful vacation destination with its stunning surroundings and crystal blue beaches? Even Filipinos from different regions of the country, as well as foreigners from all over the world, can't get enough of its splendor.</p>
+    </div>
+
+    <div class="row mx-auto" style="width: auto;">
+        <div class="col" style="border: 1px solid black;"></div>
+    </div>
+
+    <div class="container p-3">
+        <div class="row">
+            <div class="col">
+                <h2 style="text-align: center;">Geography</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Coordinates</th>
+                            <td><a href="https://www.google.com/maps/place/Boracay/@11.969359,121.8595884,13z/data=!3m1!4b1!4m5!3m4!1s0x33a53c2f324b4ee7:0xa738e81e5e6dda36!8m2!3d11.9673753!4d121.924815" target="_blank">11°58'8"N 121°55'26"E</a></td>
+                        </tr>
+                        <tr>
+                            <th>Archipelago</th>
+                            <td>Visayas</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">Adjacent to</th>
+                            <td>Jintotolo Channel</td>
+                        </tr>
+                        <tr>
+                            <td>Sibuyan Sea</td>
+                        </tr>
+                        <tr>
+                            <td>Sulu Sea</td>
+                        </tr>
+                        <tr>
+                            <td>Tablas Strait</td>
+                        </tr>
+                        <tr>
+                            <th>Area</th>
+                            <td>10.32 km2 (3.98 sq mi)</td>
+                        </tr>
+                        <tr>
+                            <th>Highest Elevation</th>
+                            <td>302 ft (92 m)</td>
+                        </tr>
+                        <tr>
+                            <th>Highest Point</th>
+                            <td>Mount Luho</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h2 style="text-align: center;">Administration</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Philippines</th>
+                        </tr>
+                        <tr>
+                            <th>Region</th>
+                            <td>Western Visayas</td>
+                        </tr>
+                        <tr>
+                            <th>Province</th>
+                            <td>Aklan</td>
+                        </tr>
+                        <tr>
+                            <th>Municipality</th>
+                            <td>Malay</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Barangays</th>
+                            <td>Balabag</td>
+                        </tr>
+                        <tr>
+                            <td>Manoc-Manoc</td>
+                        </tr>
+                        <tr>
+                            <td>Yapak</td>
+                        </tr>
+                        <tr>
+                            <th>Largest Settlement</th>
+                            <td>Manoc-Manoc (population: 14,810)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h2 style="text-align: center;">Demographics</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Population</th>
+                            <td>37,802 (2020)</td>
+                        </tr>
+                        <tr>
+                            <th>Pop. Density</th>
+                            <td>3,663/km2 (9487/sq mi)</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="4">Ethnic Groups</th>
+                            <td>Ati</td>
+                        </tr>
+                        <tr>
+                            <td>Aklanon</td>
+                        </tr>
+                        <tr>
+                            <td>Hiligaynon</td>
+                        </tr>
+                        <tr>
+                            <td>Karay-a</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mx-auto" style="width: auto;">
+        <div class="col" style="border: 1px solid black;"></div>
+    </div>
+
+    <div class="container p-3" style="text-align: center;">
+        <h2>Location</h2>
+        <p>Boracay Island is located 0.8 kilometers (0.50 mi) northwest of Panay Island and is part of the Philippines' Western Visayas area, or Region VI. It's located 50 kilometers (31 miles) northwest of Kalibo, 150 kilometers (93 miles) northwest of Iloilo City, and 200 nautical miles (370 kilometers) southeast of Manila. The island is around seven kilometers long, dog-bone shaped, and has a total land area of 10.32 square kilometers (3.98 sq mi).</p>
+        <img src="./home/images/loc.png" class="mx-auto d-block rounded-3 img-fluid"usemap="#image-map">
+        <map name="image-map">
+            <area target="_blank" alt="Boracay Location" title="Boracay Location" href="https://www.google.com/maps/place/Boracay/@11.9693649,121.8922093,13z/data=!3m1!4b1!4m5!3m4!1s0x33a53c2f324b4ee7:0xa738e81e5e6dda36!8m2!3d11.9673753!4d121.924815" coords="1,1,300,274" shape="rect">
+        </map>
+    </div>
+
+    <div class="row mx-auto" style="width: auto;">
+        <div class="col" style="border: 1px solid black;"></div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <h3 style="text-align:center; font-family: Ribeye, sans-serif; padding: 5px 0px 5px 0px; margin: 8px 0 3px 0;">bora.</h3>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+</html>
